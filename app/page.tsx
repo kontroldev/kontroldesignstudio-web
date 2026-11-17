@@ -40,7 +40,7 @@ const technologies = [
 ];
 
 function BrandLogo() {
-  return <Image className="brand-logo" src="/kontrol-logo.png" alt="Kontrol Design Studio" width={1774} height={887} />;
+  return <Image className="brand-logo" src="/kontrol-app-studio.png" alt="Kontrol App Studio" width={1984} height={793} />;
 }
 
 function BrandSymbol() {
@@ -79,7 +79,7 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand header-brand" href="#top" aria-label="KontrolDev, inicio"><BrandSymbol /><span>KONTROL</span></a>
+        <a className="brand header-brand" href="#top" aria-label="Kontrol App Studio, inicio"><BrandSymbol /><span>KONTROL APP STUDIO</span></a>
         <nav aria-label="Navegación principal"><a href="#servicios">Qué hago</a><a href="#proyectos">Proyectos</a><a href="#proceso">Proceso</a><a href="#contacto">Contacto</a></nav>
         <button className="theme-toggle" type="button" onClick={toggleTheme} aria-label={dark ? 'Activar modo claro' : 'Activar modo oscuro'}>{dark ? <Sun size={17} /> : <Moon size={17} />}</button>
       </header>
@@ -87,7 +87,7 @@ export default function Home() {
       <section className="hero shell" id="top">
         <div className="hero-orb hero-orb-one" /><div className="hero-orb hero-orb-two" />
         <div className="hero-brand-lockup">
-          <Image src="/kontrol-logo.png" alt="Kontrol Design Studio" width={1774} height={887} priority />
+          <Image src="/kontrol-app-studio.png" alt="Kontrol App Studio" width={1984} height={793} priority />
         </div>
         <div className="eyebrow"><span /> Diseño y desarrollo independiente para productos Apple</div>
         <h1>Diseño apps<br />que se sienten <em>naturales.</em></h1>
@@ -125,7 +125,7 @@ export default function Home() {
 
       <section className="section tech-section"><div className="shell"><div className="section-intro compact"><p className="kicker">Tecnología nativa</p><h2>Herramientas modernas<br />para productos duraderos.</h2></div><div className="tech-grid">{technologies.map(({ name, detail, icon: Icon }) => <div className="tech-item" key={name}><Icon size={24} /><div><strong>{name}</strong><span>{detail}</span></div><Check size={16} /></div>)}</div></div></section>
 
-      <section className="section shell about-section"><div><p className="kicker">Sobre KontrolDev</p><h2>Pequeño por diseño.<br />Ambicioso por naturaleza.</h2></div><div className="about-copy"><p>KontrolDev documenta mi camino hacia convertirme en desarrollador iOS: cada proyecto que ves aquí es real, construido con Swift, SwiftUI y las herramientas modernas del ecosistema Apple.</p><p className="about-detail">Cuido cada detalle, la accesibilidad y el rendimiento de lo que construyo, y sigo aprendiendo cada día. Busco incorporarme a un equipo donde seguir creciendo como iOS developer y aportar desde el primer día.</p><a className="text-link" href="#contacto">Hablemos <ChevronRight size={17} /></a></div></section>
+      <section className="section shell about-section"><div><p className="kicker">Sobre Kontrol App Studio</p><h2>Pequeño por diseño.<br />Ambicioso por naturaleza.</h2></div><div className="about-copy"><p>Kontrol App Studio documenta mi camino hacia convertirme en desarrollador iOS: cada proyecto que ves aquí es real, construido con Swift, SwiftUI y las herramientas modernas del ecosistema Apple.</p><p className="about-detail">Cuido cada detalle, la accesibilidad y el rendimiento de lo que construyo, y sigo aprendiendo cada día. Busco incorporarme a un equipo donde seguir creciendo como iOS developer y aportar desde el primer día.</p><a className="text-link" href="#contacto">Hablemos <ChevronRight size={17} /></a></div></section>
 
       <section className="contact-section" id="contacto"><div className="contact-glow" /><div className="shell contact-inner"><p className="kicker">Empecemos una conversación</p><h2>¿Tienes una idea<br />que merece existir?</h2><p>Cuéntanos qué tienes en mente. Hablemos de cómo convertir tu idea en una app para Apple.</p><a className="button button-light" href="mailto:info@kontroldesignstudio.com" target="_blank" rel="noreferrer">Cuéntanos tu proyecto <ArrowUpRight size={17} /></a><a className="text-link" style={{ marginTop: 14 }} href="mailto:info@kontroldesignstudio.com">info@kontroldesignstudio.com</a></div></section>
 

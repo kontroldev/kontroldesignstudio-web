@@ -40,11 +40,15 @@ const technologies = [
 ];
 
 function BrandLogo() {
-  return <Image className="brand-logo" src="/kontrol-app-studio.png" alt="Kontrol App Studio" width={1984} height={793} />;
+  return <BrandWordmark />;
 }
 
 function BrandSymbol() {
   return <span className="brand-symbol" aria-hidden="true"><Image src="/kontrol-isotipo.png" alt="" width={374} height={591} /></span>;
+}
+
+function BrandWordmark({ className = '' }: { className?: string }) {
+  return <span className={`brand-wordmark ${className}`} aria-label="Kontrol App Studio"><Image src="/kontrol-isotipo.png" alt="" width={374} height={591} /><span><strong>KONTROL</strong><small>APP STUDIO</small></span></span>;
 }
 
 function getTheme() {
@@ -87,7 +91,7 @@ export default function Home() {
       <section className="hero shell" id="top">
         <div className="hero-orb hero-orb-one" /><div className="hero-orb hero-orb-two" />
         <div className="hero-brand-lockup">
-          <Image src="/kontrol-app-studio.png" alt="Kontrol App Studio" width={1984} height={793} priority />
+          <BrandWordmark className="hero-wordmark" />
         </div>
         <div className="eyebrow"><span /> Diseño y desarrollo independiente para productos Apple</div>
         <h1>Diseño apps<br />que se sienten <em>naturales.</em></h1>

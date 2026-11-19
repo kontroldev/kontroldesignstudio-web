@@ -70,3 +70,4 @@
 @media(max-width:560px){.vine-video-frame{width:200px;margin-top:34px;border-radius:30px}.vine-video-frame video{border-radius:23px}.vine-screen-grid{grid-template-columns:1fr;max-width:360px}.vine-screen-card img{max-height:480px}.vine-site-header .header-brand{font-size:11px}}
 
 .project-actions{display:flex;flex-wrap:wrap;gap:0 24px}
+.brand-wordmark small{display:flex;align-items:center;gap:.9em;width:100%;white-space:nowrap}.brand-wordmark small::before,.brand-wordmark small::after{content:'';height:1px;flex:1;background:currentColor;opacity:.6}.hero-wordmark strong{letter-spacing:.015em}.hero-wordmark small{letter-spacing:.55em}.footer-brand .brand-wordmark small{gap:.65em}

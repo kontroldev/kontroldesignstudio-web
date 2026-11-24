@@ -1,0 +1,3 @@
+import Image from 'next/image';
+import Link from 'next/link';
+export function VerbaFooter() { return <footer className="site-footer shell"><Link className="brand footer-brand" href="/" aria-label="Kontrol App Studio"><Image src="/kontrol-logo.png" alt="Kontrol App Studio" className="footer-logo" width={1774} height={887} /></Link><div className="footer-meta"><span>© {new Date().getFullYear()} Raúl Gallego</span><span>Verba es una app de Kontrol App Studio.</span></div><div className="footer-links"><Link href="/verba/privacy">Privacidad</Link><a href="mailto:info@kontroldesignstudio.com?subject=Verba">Soporte</a></div></footer>; }

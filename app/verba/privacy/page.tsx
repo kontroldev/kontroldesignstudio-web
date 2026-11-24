@@ -12,7 +12,7 @@ export default function VerbaPrivacyPage() {
   return (
     <main className="verba-page">
       <VerbaHeader />
-      <article className="legal-page shell">
+      <article className="legal-page shell" id="contenido" tabIndex={-1}>
         <p className="kicker">Verba</p>
         <h1>Política de privacidad</h1>
         <p className="legal-page-introduction">Tu voz y tus archivos son tuyos. Verba está diseñada para transcribirlos en tu Mac.</p>

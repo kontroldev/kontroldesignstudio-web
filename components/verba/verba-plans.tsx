@@ -12,8 +12,8 @@ export function VerbaPlans() {
   return (
     <div className="verba-comparison">
       <table>
-        <caption className="verba-sr-only">Comparación de los planes Gratis y Verba Pro</caption>
-        <thead><tr><th scope="col">Funciones</th><th scope="col">Gratis<span>Para empezar</span></th><th scope="col">Verba Pro<span>Pago único</span></th></tr></thead>
+        <caption className="verba-sr-only">Comparación de los planes Gratis y Vozenta Pro</caption>
+        <thead><tr><th scope="col">Funciones</th><th scope="col">Gratis<span>Para empezar</span></th><th scope="col">Vozenta Pro<span>Pago único</span></th></tr></thead>
         <tbody>{rows.map(([feature, free, pro]) => <tr key={feature}><th scope="row">{feature}</th><td>{free}</td><td>{pro}</td></tr>)}</tbody>
       </table>
       <p>Los modelos disponibles dependen de la versión de macOS y del procesador de tu Mac.</p>

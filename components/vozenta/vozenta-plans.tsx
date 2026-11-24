@@ -8,11 +8,11 @@ const rows = [
   ['Procesamiento local y sin cuenta', 'Incluido', 'Incluido'],
 ];
 
-export function VerbaPlans() {
+export function VozentaPlans() {
   return (
-    <div className="verba-comparison">
+    <div className="vozenta-comparison">
       <table>
-        <caption className="verba-sr-only">Comparación de los planes Gratis y Vozenta Pro</caption>
+        <caption className="vozenta-sr-only">Comparación de los planes Gratis y Vozenta Pro</caption>
         <thead><tr><th scope="col">Funciones</th><th scope="col">Gratis<span>Para empezar</span></th><th scope="col">Vozenta Pro<span>Pago único</span></th></tr></thead>
         <tbody>{rows.map(([feature, free, pro]) => <tr key={feature}><th scope="row">{feature}</th><td>{free}</td><td>{pro}</td></tr>)}</tbody>
       </table>
